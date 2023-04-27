@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": " node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VladimirRM/node-js-ip.git"
@@ -13,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VladimirRM/node-js-ip/issues"
   },
-  "homepage": "https://github.com/VladimirRM/node-js-ip#readme"
+  "homepage": "https://github.com/VladimirRM/node-js-ip#readme",
+  "dependencies": {
+    "currency-converter-lt": "^2.0.0-beta.0"
+  }
 }
