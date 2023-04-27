@@ -1,7 +1,6 @@
-const CC  = require('currency-converter-lt')
+const os  = require('os')
 
-let currencyConverter = new CC({from:"USD", to:"EUR", amount:100})
+let res = os.platform()
+console.log(res)
 
-currencyConverter.convert().then((response) => {
-    console.log(`Result:${response}`) //or do something else
-})
+
