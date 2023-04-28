@@ -1,9 +1,9 @@
 const fs = require('fs')
 
-let result = fs.readFile('some.txt','utf-8',(err,data)=>{
-    fs.writeFile('some.txt',data +'\nSome text',(err,data)=>{
-        console.log('All working')
+// fs.mkdirSync('Text-file')
 
+fs.mkdir('Text-files',()=>{
+    fs.writeFile('./Text-files/Some-text.txt','Hello',()=>{
+        
     })
-
 })
