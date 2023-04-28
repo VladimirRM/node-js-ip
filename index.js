@@ -1,15 +1,14 @@
-const fs = require('fs')
+const http = require('http')
 
-// fs.mkdirSync('Text-file')
+let server = http.createServer((req,res)=>{
+   res.writeHead(200,{'Content-type':'text/html; charset=utf-8'})
+   res.end('Hello <b> node js</b>')
+})
 
-// fs.mkdir('Text-files',()=>{
-//     fs.writeFile('./Text-files/Some-text.txt','Hello',()=>{
 
-//     })
-// })
+const PORT = 3000
+const HOST = 'localhost'
 
-fs.unlink('./Text-files/Some-text.txt',()=>{
-    fs.rmdir('./Text-files',()=>{
-        
-    })
+server.listen(PORT,HOST,()=>{
+    console.log(`Сервер запущен: http://${HOST}:${PORT}`)
 })
